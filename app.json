@@ -12,7 +12,20 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.saurav-bhagat.AudioSample",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "We need access to your microphone to record your voice.",
+        "UIBackgroundModes": [
+          "audio",
+          "fetch"
+        ],
+        "entitlements": {
+          "aps-environment": "production"
+        },
+        "CFBundleDisplayName": "Sample Audio",
+        "CFBundleName": "Sample Audio"
+      }
     },
     "android": {
       "adaptiveIcon": {
